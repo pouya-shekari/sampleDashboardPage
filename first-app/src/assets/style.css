@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+html{
+    font-size: 62.5%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerr{
+    display: flex;
+    justify-content: center !important;
+    margin-top: 5rem;
+    width: 100% !important;
+}
+
+.tasks , .completed , .doing{
+    background-color: lightblue;
+    min-height: 50vh;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+}
+
+.doing{
+    background-color: #f5f0b3;
+}
+
+.completed{
+    background-color: lightgreen;
+}
+
+.list-group{
+    margin-top: 1rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.list-group-item{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+h4{
+     font-size: 1.8rem;
+     font-weight: bold;
+}
+
+
+
+.itemButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.bg-btn{
+    background-color: lightblue;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0 1rem;
+    border-radius: 0.5rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 535px) {
+    main{
+        justify-content:center;
+    }
+    .input-group{
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-group input , .input-group-append , .input-group-append button , .tasks , .completed , .doing{
+        width: 100% !important;
+    }
+
+}
